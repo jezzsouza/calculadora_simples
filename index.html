@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+     <div class="contaner">
+          <div name="formulario">
+              <input id="display" type="text">
+          </div>
+
+          <table> 
+                 <tr> <!--linha-->
+                      <td> <!--coluna-->
+                         <input type="button" value="C" onclick="limparDisplay(this)">
+                      </td> 
+                      <td>
+                         <input type="button" value="BK" onclick="backAction(this)"> 
+                      </td> 
+                      <td>
+                         <input type="button" value="/" onclick="insert(this)"> </td> 
+                      <td> 
+                         <input type="button" value="*" onclick="insert(this)">
+                      </td> 
+                 </tr>
+
+                 <tr> <!--seguda linha-->
+                        <td> 
+                            <input type="button" value="7" onclick="insert(this)">
+                        </td> 
+                        <td>
+                            <input type="button" value="8" onclick="insert(this)"> 
+                        </td> 
+                        <td>
+                            <input type="button" value="9" onclick="insert(this)"> </td> 
+                        <td> 
+                            <input type="button" value="-" onclick="insert(this)">
+                        </td> 
+               </tr>
+
+               <tr> <!--terceira linha-->
+                        <td> 
+                            <input type="button" value="4"onclick="insert(this)">
+                        </td> 
+                        <td>
+                            <input type="button" value="5" onclick="insert(this)"> 
+                        </td> 
+                        <td>
+                            <input type="button" value="6" onclick="insert(this)"> 
+                        </td> 
+                        <td> 
+                            <input type="button" value="+" onclick="insert(this)">
+                        </td> 
+               </tr>
+
+               <tr> <!--quarta linha-->
+                        <td> 
+                           <input type="button" value="1" onclick="insert(this)">
+                        </td> 
+                        <td>
+                            <input type="button" value="2" onclick="insert(this)"> 
+                        </td> 
+                        <td>
+                            <input type="button" value="3" onclick="insert(this)"> 
+                        </td> 
+                        <td rowspan="5"> 
+                            <input type="button" style="height: 106px;" value="=" onclick="equal(this);">
+                        </td> 
+               </tr>
+
+               <tr> <!--quinta linha-->
+                        <td colspan="2"> 
+                            <input type="button" style="width: 100%;" value="0" onclick="insert(this)">
+                        </td> 
+                        <td rowspan="5">
+                            <input type="button" value="." onclick="insert(this)"> 
+                        </td> 
+               </tr>
+          </table>
+
+     </div>
+
+<script src="assets/script.js"></script>
+
+</body>
+<script src="assets/script.js"></script>
+</html>
